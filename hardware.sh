@@ -3,7 +3,7 @@
 # SPXIS provisioning script for the Raspberry Pi Zero/ZeroW
 
 echo "*** Starting"
-mkdir ~/Adafruit && mkdir ~/Pimoroni
+mkdir -p ~/Adafruit && mkdir -p ~/Pimoroni # Create the folders if they don't already exist
 
 curl -sS https://get.pimoroni.com/unicornhat | bash
 curl https://get.pimoroni.com/unicornhat | bash # Install Unicorn Hat
